@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "../App.svelte",
+    "../Button.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\r\n\timport Button from \"./Button.svelte\";\r\n</script>\r\n\r\n<style>\r\n  main {\r\n    font-family: sans-serif;\r\n    text-align: center;\r\n  }\r\n</style>\r\n\r\n<main>\r\n\t<h1>Hello CodeSandbox</h1>\r\n\t<h2>Start editing to see some magic happen!</h2>\r\n\t<Button />\r\n</main>",
+    "<script>\r\n\tlet count = 0;\r\n\r\n\tfunction handleClick() {\r\n\t  count += 1;\r\n\t}\r\n</script>\r\n\r\n<style>\r\n\tbutton {\r\n\t  background: #ff3e00;\r\n\t  color: white;\r\n\t  border: none;\r\n\t  padding: 8px 12px;\r\n\t  border-radius: 2px;\r\n\t}\r\n</style>\r\n\r\n<button on:click={handleClick}>\r\n  Clicked {count} {count === 1 ? 'time' : 'times'}\r\n</button>"
+  ],
+  "names": [],
+  "mappings": "AAKE,IAAI,eAAC,CAAC,AACJ,WAAW,CAAE,UAAU,CACvB,UAAU,CAAE,MAAM,AACpB,CAAC;ACCF,MAAM,cAAC,CAAC,AACN,UAAU,CAAE,OAAO,CACnB,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,GAAG,CAAC,IAAI,CACjB,aAAa,CAAE,GAAG,AACpB,CAAC"
+}

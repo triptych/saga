@@ -1,13 +1,7 @@
-const express = require("express");
+import App from "./App.svelte";
 
-const app = express();
-
-app.get("/", (req, res) => {
-  res.send("Hello Express app!");
+const app = new App({
+  target: document.body
 });
 
-app.listen(3000, () => {
-  console.log("server started");
-});
-
-//testing
+export default app;
