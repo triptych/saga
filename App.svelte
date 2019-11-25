@@ -1,6 +1,6 @@
 <svelte:head>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
-<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </svelte:head>
 
 <script>
@@ -23,9 +23,9 @@
 
 <style>
   /* main {
-    font-family: sans-serif;
-    text-align: center;
-  } */
+      font-family: sans-serif;
+      text-align: center;
+    } */
   .container {
     margin: 14px;
   }
@@ -65,6 +65,7 @@
 <div class="container">
  <h1>SAGA (beta)</h1>
  <p>Interactive Fiction Engine</p>
+ <em>by Andrew Wooldridge</em>
  <button class="button is-primary">Start</button>
  <button class="button is-link">Load</button>
 </div>
