@@ -63,7 +63,7 @@
       <Button/> -->
 
 <div class="container">
- <h1>SAGA</h1>
+ <h1>SAGA (beta)</h1>
  <p>Interactive Fiction Engine</p>
  <button class="button is-primary">Start</button>
  <button class="button is-link">Load</button>
