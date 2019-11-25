@@ -23,9 +23,9 @@
 
 <style>
   /* main {
-      font-family: sans-serif;
-      text-align: center;
-    } */
+          font-family: sans-serif;
+          text-align: center;
+        } */
   .container {
     margin: 14px;
   }
@@ -65,7 +65,7 @@
 <div class="container">
  <h1>SAGA (beta)</h1>
  <p>Interactive Fiction Engine</p>
- <em>by Andrew Wooldridge</em>
+ <em>by Andrew Wooldridge</em><br>
  <button class="button is-primary">Start</button>
  <button class="button is-link">Load</button>
 </div>
