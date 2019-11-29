@@ -1,4 +1,6 @@
 <svelte:head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </svelte:head>
@@ -26,12 +28,12 @@
           font-family: sans-serif;
           text-align: center;
         } */
-  .container {
+  /* .container {
     margin: 14px;
-  }
+  } */
 </style>
 
-<main>
+
 	<!-- <h1>Hello CodeSandbox</h1>
 	<h2>Start editing to see some magic happen!</h2>
 	<Button />
@@ -61,13 +63,30 @@
 <!-- 
 
       <Button/> -->
-
+<!-- 
 <div class="container">
  <h1>SAGA (beta)</h1>
  <p>Interactive Fiction Engine</p>
  <em>by Andrew Wooldridge</em><br>
  <button class="button is-primary">Start</button>
  <button class="button is-link">Load</button>
-</div>
-</main>
+</div> -->
+
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a href="" class="navbar-item">SAGA</a>
+  </div>
+</nav>
+
+ <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Hello World
+      </h1>
+      <p class="subtitle">
+        My first website with <strong>Bulma</strong>!
+      </p>
+    </div>
+  </section>
 
