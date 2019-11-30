@@ -1,6 +1,6 @@
 <svelte:head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </svelte:head>
@@ -21,16 +21,31 @@
   //   console.log("two");
   // }
 
+  let state = {
+    page: "start"
+  }
+
+  function showMenu(){
+   
+    state.page = "menu";
+     console.log("showMenu called");
+     //state = state;
+  }
+
+  function restart(){
+    state.page = "start"
+  }
+
 </script>
 
 <style>
   /* main {
-          font-family: sans-serif;
-          text-align: center;
-        } */
+                                    font-family: sans-serif;
+                                    text-align: center;
+                                  } */
   /* .container {
-    margin: 14px;
-  } */
+                              margin: 14px;
+                            } */
 </style>
 
 
@@ -75,18 +90,55 @@
 
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a href="" class="navbar-item">SAGA</a>
+    <a href="https://github.com/triptych/saga" class="navbar-item">SAGA</a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+
   </div>
+
+  <div id="saga-main-navbar" class="navbar-menu">
+    <div class="navbar-start">
+      <a href="/"class="navbar-item">Home</a>
+      <a href="#" class="navbar-item">Documentation</a>
+      <a href="#" class="navbar-item">About</a>
+    </div>
+  </div>
+
 </nav>
 
+{#if state.page=="start"}
+[start]
  <section class="section">
     <div class="container">
       <h1 class="title">
-        Hello World
+        SAGA Game Engine
       </h1>
       <p class="subtitle">
-        My first website with <strong>Bulma</strong>!
+        Create Interactive Fiction in your browser!
       </p>
+    </div>
+    <div class="container">
+      <a href="#" on:click|preventDefault="{showMenu}">
+      Let's get started.
+      <i class="fas fa-play"></i>
+      
+      </a>
     </div>
   </section>
 
+{/if}
+
+{#if state.page=="menu"}
+
+<section class="section">
+  <div class="container">
+  [menu]
+  <button on:click="{restart}">Back</button>
+
+  </div>
+</section>
+{/if}
